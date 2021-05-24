@@ -1,0 +1,11 @@
+div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-style: normal;
+    height: 100px;
+    background-color: red;
+    background-image:
+      linear-gradient(
+        red, #f06d06
+      );
+  }
