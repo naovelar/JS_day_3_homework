@@ -8,7 +8,7 @@ const getData = async() =>{
 }
 
 const DOM_ELEMENTS = {
-    racer_data:'#racer-data'
+    racer_data:'#data'
 }
 
 form.addEventListener('submit',(event)=>{
