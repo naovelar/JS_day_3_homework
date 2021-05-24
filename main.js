@@ -8,7 +8,7 @@ const getData = async() =>{
 }
 
 const DOM_ELEMENTS = {
-    racer_data:'#data'
+    racerData:'#data'
 }
 
 form.addEventListener('submit',(event)=>{
@@ -20,12 +20,12 @@ form.addEventListener('submit',(event)=>{
 
 const create_list = (position,name,nationality,sponsor,points) => {
     const html= `<a href="#" class="list-group-item list-group-item-action list-group-item-light" style="justify-content:space-between"> ${position} ${name} ${nationality} ${sponsor} ${points} </a>`;
-    document.querySelector(DOM_ELEMENTS.racer_data).insertAdjacentHTML('beforeend',html)
+    document.querySelector(DOM_ELEMENTS.racerData).insertAdjacentHTML('beforeend',html)
 }
 
 const load_data= async() => {
     const racers_data= await getData();
-    let racers = racers_data.MRData.StandingsTable.StandingsLists[0].DriverStandings
+    let racers = racerData.MRData.StandingsTable.StandingsLists[0].DriverStandings
     console.log(racers)
     for (i = 0; i < 10; i++){
             // first and last names
